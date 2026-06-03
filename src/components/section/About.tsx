@@ -21,8 +21,8 @@ const About = () => {
   const roles = [
   'TMU Marketing Student',
   'Community Builder',
-  'Content Creator',
-  'Future Entrepreneur',
+  'Student Leader',
+  'Event Organizer',
   ];
 
   const profileImages = [
