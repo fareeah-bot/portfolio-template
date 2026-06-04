@@ -284,8 +284,8 @@ const About = () => {
                 />
                 {/* fallback for browsers that dont support webp */}
                 <img
-                  src={aboutMeJournalWebp400}
-                  alt="Journal page with handwritten personal introduction and interests"
+                 src={profile1}
+                  alt="Fareeah Allawala"
                   className="w-full h-auto object-contain cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() => setShowProfileModal(true)}
                   width="400"
