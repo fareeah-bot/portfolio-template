@@ -273,28 +273,21 @@ const About = () => {
                 );
               })}
             </div>
-
-            {/* About Me Journal Image */}
-            <div className="w-full md:max-w-2xl lg:max-w-4xl relative z-20 px-1 md:px-0"
-                {/* fallback for browsers that dont support webp */}
-                <img
-                 src={profile1}
-                  alt="Fareeah Allawala"
-                  className="w-full h-auto object-contain cursor-pointer hover:opacity-90 transition-opacity"
-                  onClick={() => setShowProfileModal(true)}
-                  width="400"
-                  height="300"
-                  fetchPriority="high"
-                  loading="eager"
-                  style={{ maxWidth: '100%', height: 'auto' }}
-                />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Profile Modal */}
-      {showProfileModal && (
+           {/* About Me Journal Image */}
+<div className="w-full md:max-w-2xl lg:max-w-4xl relative z-20 px-1 md:px-0">
+  <img
+    src={profile1}
+    alt="Fareeah Allawala"
+    className="w-full h-auto object-contain cursor-pointer hover:opacity-90 transition-opacity"
+    onClick={() => setShowProfileModal(true)}
+    width="400"
+    height="300"
+    fetchPriority="high"
+    loading="eager"
+    style={{ maxWidth: '100%', height: 'auto' }}
+  />
+</div>
+    {showProfileModal && (
         <div
           className={`fixed inset-0 z-50 flex items-center justify-center p-2 md:p-4 ${isClosing ? 'animate-fadeOut' : 'animate-fadeIn'}`}
           style={{ backgroundColor: themeColors.background.overlay }}
