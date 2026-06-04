@@ -275,13 +275,7 @@ const About = () => {
             </div>
 
             {/* About Me Journal Image */}
-            <div className="w-full md:max-w-2xl lg:max-w-4xl relative z-20 px-1 md:px-0">
-              <picture>
-                <source
-                  srcSet={`${aboutMeJournalWebp400} 400w, ${aboutMeJournalWebp800} 800w`}
-                  sizes="(max-width: 375px) 320px, (max-width: 480px) 400px, (max-width: 768px) 450px, 800px"
-                  type="image/webp"
-                />
+            <div className="w-full md:max-w-2xl lg:max-w-4xl relative z-20 px-1 md:px-0"
                 {/* fallback for browsers that dont support webp */}
                 <img
                  src={profile1}
@@ -294,7 +288,6 @@ const About = () => {
                   loading="eager"
                   style={{ maxWidth: '100%', height: 'auto' }}
                 />
-              </picture>
             </div>
           </div>
         </div>
